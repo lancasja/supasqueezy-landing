@@ -1,113 +1,45 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Simple, transparent pricing',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    'One-time payment for lifetime access to all features.',
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      id: 'one-time',
+      title: 'SupaSqueezy',
+      description: 'Complete desktop app boilerplate with licensing and authentication.',
+      price: '$99',
+      isRecommended: true,
       features: [
         {
-          title: 'MIT License',
+          title: 'Unlimited commercial use',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Source code ownership',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'Cross-platform distribution',
         },
         {
-          title: 'Modals manager',
+          title: 'Professional license management',
         },
         {
-          title: 'Hotkeys',
+          title: 'User authentication system',
         },
         {
-          title: 'Web3 components',
+          title: 'Secure data storage',
         },
         {
-          title: 'And much more...',
+          title: 'Modern UI components',
+        },
+        {
+          title: 'Production-ready builds',
         },
       ],
       action: {
         href: '#',
-      },
-    },
-    {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
-      isRecommended: true,
-      features: [
-        {
-          title: 'One project',
-        },
-        {
-          title: 'One developer',
-        },
-        {
-          title: 'Advanced components',
-        },
-        {
-          title: 'Multiple themes',
-        },
-        {
-          title: 'Next.js and Electron boilerplates',
-        },
-        {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
-      ],
-      action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
-      },
-    },
-    {
-      id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
-      price: (
-        <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
-        </HStack>
-      ),
-      features: [
-        {
-          title: 'Unlimited projects',
-        },
-        {
-          title: 'Unlimited developers',
-        },
-        {
-          title: '1 year of updates',
-        },
-        {
-          title: 'Everything from Bootstrap',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
-      ],
-      action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        label: 'Start building',
       },
     },
   ],
