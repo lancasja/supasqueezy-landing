@@ -1,3 +1,5 @@
+'use client'
+
 import { extendTheme } from '@chakra-ui/react'
 import '@fontsource-variable/inter'
 import { theme as baseTheme } from '@saas-ui/react'
