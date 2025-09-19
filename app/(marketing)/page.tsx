@@ -12,7 +12,6 @@ import {
   Text,
   VStack,
   Wrap,
-  useClipboard,
 } from '@chakra-ui/react'
 import { Br, Link } from '@saas-ui/react'
 import type { Metadata, NextPage } from 'next'
@@ -54,10 +53,6 @@ import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
-export const meta: Metadata = {
-  title: 'Supasqueezy',
-  description: 'The fastest way to build cross-platform desktop apps with licensing and user accounts.',
-}
 
 const Home: NextPage = () => {
   return (
@@ -229,8 +224,6 @@ const HeroSection: React.FC = () => {
 }
 
 const HighlightsSection = () => {
-  const { value, onCopy, hasCopied } = useClipboard('yarn add @saas-ui/react')
-
   return (
     <Highlights>
       <HighlightsItem colSpan={[1, null, 2]} title="Solid foundations">
@@ -240,7 +233,7 @@ const HighlightsSection = () => {
           build Supasqueezy on top of it.
         </Text>
       </HighlightsItem>
-      <HighlightsItem colSpan={[1, null, 2]} title="Who It’s For">
+      <HighlightsItem colSpan={[1, null, 2]} title="Who It's For">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
             Developers and startups who want to skip boilerplate setup and focus on building features that matter. Perfect for indie hackers, small teams, and SaaS founders.
