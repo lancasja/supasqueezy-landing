@@ -81,6 +81,7 @@ const HeroSection: React.FC = () => {
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
+            w="100%"
             id="home"
             justifyContent="flex-start"
             px="0"
