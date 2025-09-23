@@ -130,7 +130,7 @@ const HeroSection: React.FC = () => {
               </ButtonGroup>
             </FallInPlace>
           </Hero>
-          <Box
+          {/* <Box
             height="600px"
             position="absolute"
             display={{ base: 'none', lg: 'block' }}
@@ -151,7 +151,7 @@ const HeroSection: React.FC = () => {
                 />
               </Box>
             </FallInPlace>
-          </Box>
+          </Box> */}
         </Stack>
       </Container>
 
