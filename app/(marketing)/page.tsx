@@ -109,7 +109,7 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="https://jamlstudio.lemonsqueezy.com/checkout/buy/17c9711c-2bff-47bb-89fe-5473bf212a5b?logo=0&discount=0">
+                <ButtonLink colorScheme="primary" size="lg" href="https://jamlstudio.lemonsqueezy.com/checkout/buy/d362eda0-4d9a-47cd-b63f-836d840a23bb">
                   Start building
                 </ButtonLink>
                 {/* <ButtonLink
