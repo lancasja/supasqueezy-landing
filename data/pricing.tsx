@@ -9,7 +9,7 @@ export default {
       id: 'one-time',
       title: 'SupaSqueezy',
       description: 'Complete desktop app boilerplate with licensing and authentication.',
-      price: '$99',
+      price: '$149',
       isRecommended: true,
       features: [
         {
@@ -38,7 +38,7 @@ export default {
         },
       ],
       action: {
-        href: '#',
+        href: 'https://jamlstudio.lemonsqueezy.com/checkout/buy/17c9711c-2bff-47bb-89fe-5473bf212a5b?logo=0&discount=0',
         label: 'Start building',
       },
     },

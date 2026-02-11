@@ -47,7 +47,9 @@ import {
 import { ElectronLogo, SupabaseLogo, LemonsqueezyLogo } from '#components/logos'
 import { FallInPlace } from '#components/motion/fall-in-place'
 import { Pricing } from '#components/pricing/pricing'
+import { Section, SectionTitle } from '#components/section'
 import { Testimonial, Testimonials } from '#components/testimonials'
+import { WaitlistForm } from '#components/WaitlistForm'
 import { Em } from '#components/typography'
 import faq from '#data/faq'
 import pricing from '#data/pricing'
@@ -64,6 +66,8 @@ const Home: NextPage = () => {
       <FeaturesSection />
 
       {/* <TestimonialsSection /> */}
+
+      <WaitlistSection />
 
       <PricingSection />
 
@@ -105,10 +109,10 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="#">
+                <ButtonLink colorScheme="primary" size="lg" href="https://jamlstudio.lemonsqueezy.com/checkout/buy/17c9711c-2bff-47bb-89fe-5473bf212a5b?logo=0&discount=0">
                   Start building
                 </ButtonLink>
-                <ButtonLink
+                {/* <ButtonLink
                   size="lg"
                   href="mailto:jaml17@proton.me"
                   variant="outline"
@@ -126,8 +130,10 @@ const HeroSection: React.FC = () => {
                   }
                 >
                   Contact
-                </ButtonLink>
+                </ButtonLink> */}
               </ButtonGroup>
+
+              <WaitlistForm />
             </FallInPlace>
           </Hero>
           {/* <Box
@@ -412,6 +418,20 @@ const TestimonialsSection = () => {
         ))}
       </>
     </Testimonials>
+  )
+}
+
+const WaitlistSection = () => {
+  return (
+    <Section>
+      <SectionTitle
+        title="Not ready yet? Stay in the loop."
+        align="center"
+      />
+      <Box display="flex" justifyContent="center" pb="8">
+        <WaitlistForm />
+      </Box>
+    </Section>
   )
 }
 

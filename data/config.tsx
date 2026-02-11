@@ -33,7 +33,7 @@ const siteConfig = {
       // },
       {
         label: 'Start building',
-        href: '#',
+        href: 'https://jamlstudio.lemonsqueezy.com/checkout/buy/17c9711c-2bff-47bb-89fe-5473bf212a5b?logo=0&discount=0',
         variant: 'primary',
       },
     ],
